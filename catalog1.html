@@ -17,31 +17,41 @@
 			</nav>
 		</header>
 		<main class="container">
-			<section class="searchParameters">
-				<form class="searchParametersForm" action="https://echo.htmlacademy.ru" method="post">
-					<div class="infrastructure">
-						<p>Инфраструктура:</p>
-						<input type="checkbox" name="infrastructure" value="pool" checked>Бассейн<br>
-						<input type="checkbox" name="infrastructure" value="parking">Парковка<br>
-						<input type="checkbox" name="infrastructure" value="Wi-fi">Wi-fi
-					</div>
-					<div class="typeOfHousing">
-						<p>Тип жилья:</p>
-						<input type="checkbox" name="typeOfHousing" value="guesthouse" checked>Гостиница<br>
-						<input type="checkbox" name="typeOfHousing" value="hotel" checked>Мотель<br>
-						<input type="checkbox" name="typeOfHousing" value="apartment" checked>Апартаменты
-					</div>
-					<div>
-						<p>Стоимость в сутки(Р):</p>
-						<table>
-							<tr>
-								<td>От 0</td>
-								<td>До 3000</td>
-							</tr>
-						</table>
-						<input type="range" min="0" max="3000" step="1" value="2500">
+			<section class="search-parameters">
+				<form class="search-parameters-form" action="https://echo.htmlacademy.ru" method="post">
+					<fieldset class="infrastructure">
+						<legend>Инфраструктура:</legend>
+						<input id="pool" type="checkbox" name="infrastructure" value="pool" checked>
+						<label for="pool">Бассейн</label>
+						<input id="parking" type="checkbox" name="infrastructure" value="parking">
+						<label for="parking">Парковка</label>
+						<input id="wi-fi" type="checkbox" name="infrastructure" value="Wi-fi">
+						<label for="wi-fi">Wi-fi</label>
+					</fieldset>
+					<fieldset class="type-of-housing">
+						<legend>Тип жилья:</legend>
+						<input id="questhouse" type="checkbox" name="typeOfHousing" value="guesthouse" checked>
+						<label for="questhouse">Гостиница</label>
+						<input id="hotel" type="checkbox" name="typeOfHousing" value="hotel" checked>
+						<label for="hotel">Мотель</label>
+						<input id="apartment" type="checkbox" name="typeOfHousing" value="apartment" checked>
+						<label for="apartment">Апартаменты</label>
+					</fieldset>
+					<fieldset class="price-calculation">
+						<legend>Стоимость в сутки(Р):</legend>
+						<div class="first-price">
+							<input id="start-price" type="text" name="start-price" placeholder="От 0">	
+						</div>
+						<div class="last-price">
+							<input id="finish-price" type="text" name="finish-price" placeholder="До 3000">	
+						</div>
+						<div class="common-band">
+							<span class="shaded-band"></span>
+							<button><img src="img/circle.svg" width="20" height="22" alt="ползунок"></button>
+							<button><img src="img/circle.svg" width="20" height="22" alt="ползунок"></button>
+						</div>
 						<button type="submit">Показать</button>
-					</div>
+					</fieldset>
 				</form>
 			</section>
 			<section class="search-result">
