@@ -77,28 +77,36 @@
 			</div>
 			<button>Поиск гостиницы в Седоне</button>
 			<form class="data-search" action="https://echo.htmlacademy.ru" method="post">
-					<label for="user-arrival">Дата заезда:</label>
-					<div class="arrival">
+				<div class="arrival">
+					<label for="user-arrival" class="form-parametrs">Дата заезда:</label>
+					<div class="date">
 						<input id="user-arrival" type="text" name="arrival" placeholder="24 апреля 2017">
 						<button><img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату"></button>
 					</div>
-					<label for="user-departure">Дата выезда:</label>
-					<div class="departure">
+				</div>
+				<div class="departure">
+					<label for="user-departure" class="form-parametrs">Дата выезда:</label>
+					<div class="date">
 						<input id="user-departure" type="text" name="departure" placeholder="4 июля 2017">
 						<button><img src="img/calendar.svg" width="21" height="22" alt="Выбрать дату"></button>
 					</div>
-					<label for="user-adults">Взрослые:</label>
-					<div class="number-of-adults">
+				</div>
+				<div class="number-of-adults">
+					<label for="user-adults" class="form-parametrs">Взрослые:</label>
+					<div class="number">
 						<input id="user-adults" type="text" name="adults" placeholder="2">
 						<button>-</button>
 						<button>+</button>
 					</div>
-					<label for="user-children">Дети:</label>
-					<div class="number-of-children">
+				</div>
+				<div class="number-of-children">
+					<label for="user-children" class="form-parametrs">Дети:</label>
+					<div class="number">
 						<input id="user-children" type="text" name="children" placeholder="0">
 						<button>-</button>
 						<button>+</button>
 					</div>
+				</div>
 				<button type="submit">Найти</button>
 			</form>
 			<img src="img/map.jpg" width="1718" height="748" alt="карта местности">
