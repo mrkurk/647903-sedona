@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Седона</title>
+		<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 	</head>
 	<body>
 		<header class="main-header">
@@ -56,28 +59,34 @@
 					<fieldset class="price-calculation">
 						<legend>Стоимость в сутки(Р):</legend>
 						<div class="first-price">
-							<label class="price-range"><input id="start-price" type="text" name="start-price" placeholder="От 0"></label>
+							<label class="price-range">
+								<span class="visibility-hidden">Цена от</span>
+								<input id="start-price" type="text" name="start-price" placeholder="От 0">
+							</label>
 						</div>
 						<div class="last-price">
-							<label class="price-range"><input id="finish-price" type="text" name="finish-price" placeholder="До 3000"></label>
+							<label class="price-range">
+								<span class="visibility-hidden">Цена до</span>
+								<input id="finish-price" type="text" name="finish-price" placeholder="До 3000">
+							</label>
 						</div>
 						<div class="common-band">
 							<span class="shaded-band"></span>
 							<button><img src="img/circle.svg" width="20" height="22" alt="ползунок"></button>
 							<button><img src="img/circle.svg" width="20" height="22" alt="ползунок"></button>
 						</div>
-						<button type="submit">Показать</button>
+						<button class="show" type="submit">Показать</button>
 					</fieldset>
 				</form>
 			</section>
 			<section class="search-result">
 				<h3 class="visually-hidden">Результат поиска</h3>
-				<p>Найдено:3</p>
-				<p>Сортировка:</p>
+				<p class="found">Найдено:3</p>
+				<p class="sort">Сортировка:</p>
 				<ul class="first-sort">
-					<li><a href="#">По цене</a></li>
-					<li><a href="#">По типу</a></li>
-					<li><a href="#">По рейтингу</a></li>
+					<li><a class="first-sort-a" href="#">По цене</a></li>
+					<li><a class="first-sort-a" href="#">По типу</a></li>
+					<li><a class="first-sort-a" href="#">По рейтингу</a></li>
 				</ul>
 				<ul class="second-sort">
 					<li><a href="catalog1.html"><span class="visually-hidden">Рейтинг по возрастанию</span></a></li>
@@ -91,15 +100,15 @@
 						<img src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort and SPA">
 						<table class="table-hotels">
 							<tr>
-								<th colspan="2">Amara Resort & SPA</th>
+								<th class="names-of-hotels" colspan="2">Amara Resort & SPA</th>
 							</tr>
 							<tr>
 								<td>Гостиница</td>
 								<td>от 4000 р.</td>
 							</tr>
 							<tr>
-								<td><a href="#">Подробнее</a></td>
-								<td><a href="#">Забронировать</a></td>
+								<td><a class="detail" href="#">Подробнее</a></td>
+								<td><a class="reserve" href="#">Забронировать</a></td>
 							</tr>
 						</table>
 						<div class="rating">
@@ -111,15 +120,15 @@
 						<img src="img/desert.jpg" width="135" height="90" alt="мотель Desert Quail inn">
 						<table class="table-hotels">
 							<tr>
-								<th colspan="2">Desert Quail inn</th>
+								<th class="names-of-hotels" colspan="2">Desert Quail inn</th>
 							</tr>
 							<tr>
 								<td>Мотель</td>
 								<td>от 3000 р.</td>
 							</tr>
 							<tr>
-								<td><a href="#">Подробнее</a></td>
-								<td><a href="#">Забронировать</a></td>
+								<td><a class="detail" href="#">Подробнее</a></td>
+								<td><a class="reserve" href="#">Забронировать</a></td>
 							</tr>
 						</table>
 						<div class="rating">
@@ -131,15 +140,15 @@
 						<img src="img/villas.jpg" width="135" height="90" alt="апартаменты Villas at Poco Diablo">
 						<table class="table-hotels">
 							<tr>
-								<th colspan="2">Villas at Poco Diablo</th>
+								<th class="names-of-hotels" colspan="2">Villas at Poco Diablo</th>
 							</tr>
 							<tr>
 								<td>Апартаменты</td>
 								<td>от 2000 р.</td>
 							</tr>
 							<tr>
-								<td><a href="#">Подробнее</a></td>
-								<td><a href="#">Забронировать</a></td>
+								<td><a class="detail" href="#">Подробнее</a></td>
+								<td><a class="reserve" href="#">Забронировать</a></td>
 							</tr>
 						</table>
 						<div class="rating">
@@ -151,7 +160,7 @@
 			</section>
 		</main>
 		<footer class="main-footer">
-			<p>#visitsedona</p>
+			<p class="hashtag">#visitsedona</p>
 			<div class="share">
 				<span class="visually-hidden">Соцсети</span>
 				<a class="social social-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
@@ -159,7 +168,7 @@
 				<a class="social social-inst" href="#"><span class="visually-hidden">Инстаграм</span></a>
 			</div>
 			<address>
-				<p>website by</p>
+				<p class="web-by">website by</p>
 				<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoAcademy.svg" width="115" height="41" alt="логотип академии"></a>
 			</address>
 		</footer>

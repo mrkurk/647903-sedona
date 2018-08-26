@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"> 
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
 	<header class="main-header">
@@ -21,7 +24,7 @@
 			<img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать!">
 		</section>
 		<section class="features">
-			<h2 class="slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+			<h2 class="slogan">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
 			<p class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			<ul class="features-list">
 				<li class="feature-item">
@@ -75,7 +78,7 @@
 				<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
 			</div>
-			<button>Поиск гостиницы в Седоне</button>
+			<button class="search-btn">Поиск гостиницы в Седоне</button>
 			<form class="data-search" action="https://echo.htmlacademy.ru" method="post">
 				<div class="arrival">
 					<label for="user-arrival" class="form-parametrs">Дата заезда:</label>
@@ -107,13 +110,13 @@
 						<button>+</button>
 					</div>
 				</div>
-				<button type="submit">Найти</button>
+				<button class="search-sbt" type="submit">Найти</button>
 			</form>
 			<img src="img/map.jpg" width="1718" height="748" alt="карта местности">
 		</section>
 	</main>
 	<footer class="main-footer">
-		<p>#visitsedona</p>
+		<p class="hashtag">#visitsedona</p>
 		 <div class="share">
 			<span class="visually-hidden">Соцсети</span>
 			<a class="social social-tw" href="#"><span class="visually-hidden">Твиттер</span></a>
@@ -121,7 +124,7 @@
 			<a class="social social-inst" href="#"><span class="visually-hidden">Инстограм</span></a>
 		</div>
 		<address>
-			<p>website by</p>
+			<p class="web-by">website by</p>
 			<a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logoAcademy.svg" width="115" height="41" alt="логотип академии"></a>
 		</address>
 	</footer>
