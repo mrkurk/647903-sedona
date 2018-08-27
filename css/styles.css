@@ -20,6 +20,7 @@ a {
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
+	font-weight: bold;
 	
 	background-color: #ffffff;
 }
@@ -55,12 +56,89 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+	font-weight: bold;
+	color: #000000;
 }
 
 .advantages {
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
+	color: #333333;
+	font-weight: normal;
+}
+
+.realy-city h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.realy-city h3 span,
+.realy-city p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.recommendations-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.recommendations-item p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.bridge h3 span,
+.bridge p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #ffffff;
+}
+
+.bridge h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+.feature-items h3 {
+	font-size: 21px;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.feature-items h3 span,
+.feature-items p {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	color: #333333;
+}
+
+.interested h2 {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.interested p {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	color: #333333;
 }
 
 .realy-city,
@@ -88,10 +166,12 @@ a {
 }
 
 .search-btn {
-	color: #ffffff;
 	font-size: 21px;
 	text-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
 	text-align: center;
+	text-transform: uppercase;
 	
 	background-color: #766357;
 }
@@ -99,6 +179,15 @@ a {
 .form-parametrs {
 	font-size: 14px;
 	line-height: 26px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.form-input::placeholder {
+	font-size: 14px;
+	line-height: 26px;
+	font-weight:bold;
+	color: #000000;
 }
 
 .number input,
