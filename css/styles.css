@@ -1,6 +1,8 @@
 body {
-	margin: 0;
+	width: 1200px;
+	margin: 0 auto;
 	padding: 0;
+	
 	
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
@@ -68,11 +70,14 @@ a {
 }
 
 .advantages {
+	width: 600px;
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
 	color: #333333;
 	font-weight: normal;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .realy-city h3 {
@@ -178,11 +183,13 @@ a {
 
 .search-btn {
 	font-size: 21px;
-	text-height: 26px;
+	line-height: 26px;
 	font-weight: bold;
 	color: #ffffff;
 	text-align: center;
 	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
 	
 	background-color: #766357;
 }
@@ -259,6 +266,15 @@ a {
 	line-height: 26px;
 	font-weight: bold;
 	color: #000000;
+	width: 400px;
+}
+
+.share {
+	width: 400px;
+}
+
+address {
+	width: 400px;
 }
 
 .web-by {
@@ -460,10 +476,20 @@ a {
 	color: #766357;
 }
 
+.site-navigation {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.main-navigation {
+	position: relative;
+}
+
+
 .main-navigation li {
-	display: inline-block;
+	display: flex;
 	width: 240px;
-	vertical-align: middle;
 	text-align: center;
 }
 
@@ -475,7 +501,7 @@ a {
 	position: absolute;
 	z-index: 1;
 	top: 0;
-	left: 750;
+	left: calc(50%-70px);
 }
 
 .greeting {
@@ -487,4 +513,59 @@ a {
 	background-size: cover;
 	background-position: top center;
 	background-repeat: no-repeat
+}
+
+.slogan {
+	width: 441px;
+	margin: 0 auto;
+}
+
+.recommendations-list {
+	display: flex;
+	width: 100%;
+}
+
+.feature-item {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.realy-city,
+.bridge {
+	width: 300px;
+}
+
+.city-photo,
+.bridge-photo {
+	width: 700px;
+}
+
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.data-search {
+	position: absolute;
+	background-color: white;
+	width: 400px;
+	left: calc(50%-200px);
+}
+
+.search {
+	position: relative;
+}
+
+.map-wrap: {
+	position:relative;
+}
+
+.main-footer {
+	position: absolute;
+	min-height: 40px;
+	background: rgba(255, 255, 255, 0.7);
+	width: 100%;
+	bottom: 0px;
+	display: flex;
+	justify-content: space-between;
 }
