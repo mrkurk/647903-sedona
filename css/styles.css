@@ -476,6 +476,9 @@ address {
 	color: #766357;
 }
 
+.container{
+	position: relative;
+}
 .site-navigation {
 	display: flex;
 	margin: 0;
@@ -493,6 +496,10 @@ address {
 	text-align: center;
 }
 
+.main-navigation li:first-child {
+	margin-left: 120px;
+}
+
 .main-navigation li:nth-child(2) {
 	margin-right: 240px;
 }
@@ -501,7 +508,7 @@ address {
 	position: absolute;
 	z-index: 1;
 	top: 0;
-	left: calc(50%-70px);
+	left: calc(50% - 70px);
 }
 
 .greeting {
@@ -523,6 +530,13 @@ address {
 .recommendations-list {
 	display: flex;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.recommendations-item {
+	width: 400px;
+	height: 329px;
 }
 
 .feature-item {
@@ -530,30 +544,60 @@ address {
 	flex-wrap: wrap;
 }
 
+.feature-items {
+	width: 400px;
+	height: 250px;
+	text-align: center;
+}
+
 .realy-city,
 .bridge {
-	width: 300px;
+	width: 400px;
+	height: 255px;
+	margin: 0;
 }
 
 .city-photo,
 .bridge-photo {
-	width: 700px;
+	width: 800px;
+	height: 255px;
+	margin: 0;
 }
 
 .features-list {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
 }
 
 .data-search {
 	position: absolute;
 	background-color: white;
-	width: 400px;
-	left: calc(50%-200px);
+	width: 574px;
+	height: 390px;
+	left: calc(50% - 287px);
 }
 
 .search {
 	position: relative;
+}
+
+.search-btn {
+	width: 574px;
+	height: 85px;
+}
+
+.search-sbt {
+	width: 455px;
+	height: 55px;
+	margin: 0 auto;
+}
+
+.search img {
+	border-style: none;
+	width: 100%;
+	height: auto;
 }
 
 .map-wrap: {
@@ -565,7 +609,86 @@ address {
 	min-height: 40px;
 	background: rgba(255, 255, 255, 0.7);
 	width: 100%;
-	bottom: 0px;
+	bottom: 0;
 	display: flex;
 	justify-content: space-between;
+}
+
+.search-parameters-form {
+	display: flex;
+}
+
+.infrastructure {
+	width: 250px;
+}
+
+.type-of-housing {
+	width: 250px;
+}
+
+.price-calculation {
+	width: 500px;
+	margin-left: 200px;
+}
+
+.price-range input {
+	background: transparent;
+}
+
+.price-calculation button {
+	background: transparent;
+}
+
+.search-result {
+	display: flex;
+}
+
+.found {
+	width: 200px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.sort {
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.first-sort {
+	display: flex;
+	width: 300px;
+}
+
+.first-sort-a {
+	width: 100px;
+	margin-right: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.second-sort {
+	display: flex;
+	width: 100px;
+	margin-left: 500px;
+}
+
+.hotels-flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.hotels-flex li {
+	width: 1200px;
+	display: flex;
+}
+
+.table-hotels {
+	width: 256px;
+	margin-left: 28px;
+}
+
+.rating {
+	width: 110px;
+	margin-left: 520px;
 }
