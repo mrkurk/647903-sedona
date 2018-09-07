@@ -670,7 +670,7 @@ address {
 .second-sort {
 	display: flex;
 	width: 100px;
-	margin-left: 500px;
+	margin-left: auto;
 }
 
 .hotels-flex {
@@ -691,4 +691,13 @@ address {
 .rating {
 	width: 110px;
 	margin-left: 520px;
+}
+
+.footer-hotel {
+	position: static;
+}
+
+.list-parametrs {
+	margin: 0;
+	padding: 0;
 }
